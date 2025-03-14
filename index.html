@@ -5,12 +5,41 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Max Serrano - Desarrollador</title>
     <style>
-        body { font-family: Arial, sans-serif; margin: 0; padding: 0; background-color: #f4f4f4; }
-        header { background: #333; color: #fff; padding: 1rem; text-align: center; }
-        .container { width: 80%; margin: auto; overflow: hidden; padding: 2rem 0; }
-        section { background: #fff; padding: 2rem; margin-bottom: 1rem; border-radius: 5px; }
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            /* Gradiente inicial de dos colores */
+            background: linear-gradient(90deg, #4facfe, #00f2fe);
+            transition: background 0.5s ease;
+        }
+        header {
+            background: rgba(51, 51, 51, 0.8);
+            color: #fff;
+            padding: 1rem;
+            text-align: center;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+            padding: 2rem 0;
+        }
+        section {
+            background: #fff;
+            padding: 2rem;
+            margin-bottom: 1rem;
+            border-radius: 5px;
+        }
         h2 { color: #333; }
-        footer { text-align: center; padding: 1rem; background: #333; color: white; }
+        footer {
+            text-align: center;
+            padding: 1rem;
+            background: rgba(51, 51, 51, 0.8);
+            color: #fff;
+        }
+        a { color: #4facfe; text-decoration: none; }
+        a:hover { text-decoration: underline; }
     </style>
 </head>
 <body>
@@ -44,5 +73,13 @@
     <footer>
         <p>&copy; 2025 Max Serrano</p>
     </footer>
+    <script>
+        // Actualiza el gradiente de fondo en función de la posición del mouse
+        document.addEventListener('mousemove', function(e) {
+            const width = window.innerWidth;
+            const angle = (e.clientX / width) * 360;
+            document.body.style.background = `linear-gradient(${angle}deg, #4facfe, #00f2fe)`;
+        });
+    </script>
 </body>
 </html>
