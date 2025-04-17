@@ -1,45 +1,56 @@
-<!doctype html>
-<html lang="en">
-	<head>
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <title>Mis Slides con Reveal.js</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-		<title>reveal.js</title>
+  <!-- Reveal.js CSS -->
+  <link rel="stylesheet" href="https://unpkg.com/reveal.js/dist/reveal.css">
+  <link rel="stylesheet" href="https://unpkg.com/reveal.js/dist/theme/black.css"> <!-- Puedes cambiar "black" por otros temas -->
 
-		<link rel="stylesheet" href="dist/reset.css">
-		<link rel="stylesheet" href="dist/reveal.css">
-		<link rel="stylesheet" href="dist/theme/black.css">
+  <style>
+    /* Opcional: Estilos propios */
+    .reveal h1 {
+      font-size: 3em;
+      color: #00ffea;
+    }
+    .reveal p {
+      font-size: 1.5em;
+    }
+  </style>
+</head>
 
-		<!-- Theme used for syntax highlighted code -->
-		<link rel="stylesheet" href="plugin/highlight/monokai.css">
-	</head>
-	<body>
-		<div class="reveal">
-			<div class="slides">
-				<section>Slide 1</section>
-				<section>
-					<section>Slide 2</section>
-					<section>Slide 2</section>
-				</section>
-				<section>Slide 3</section>
-				<section>Slide 3</section>
-			</div>
-		</div>
+<body>
 
-		<script src="dist/reveal.js"></script>
-		<script src="plugin/notes/notes.js"></script>
-		<script src="plugin/markdown/markdown.js"></script>
-		<script src="plugin/highlight/highlight.js"></script>
-		<script>
-			// More info about initialization & config:
-			// - https://revealjs.com/initialization/
-			// - https://revealjs.com/config/
-			Reveal.initialize({
-				hash: true,
+  <div class="reveal">
+    <div class="slides">
+      <section>
+        <h1>Bienvenido</h1>
+        <p>Esta es mi primera slide.</p>
+      </section>
 
-				// Learn about plugins: https://revealjs.com/plugins/
-				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ]
-			});
-		</script>
-	</body>
+      <section>
+        <h2>Slide 2</h2>
+        <p>Contenido de la segunda slide.</p>
+      </section>
+
+      <section>
+        <h2>Gracias</h2>
+        <p>¡Eso fue todo!</p>
+      </section>
+    </div>
+  </div>
+
+  <!-- Reveal.js Scripts -->
+  <script src="https://unpkg.com/reveal.js/dist/reveal.js"></script>
+  <script>
+    Reveal.initialize({
+      hash: true, // Para navegación con URL
+      slideNumber: true, // Mostrar número de slide
+      transition: 'slide' // Puede ser: none / fade / slide / convex / concave / zoom
+    });
+  </script>
+
+</body>
 </html>
