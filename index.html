@@ -1,109 +1,45 @@
-<!DOCTYPE html>
-<html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Max Serrano - Desarrollador</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            /* Gradiente inicial de dos colores */
-            background: linear-gradient(90deg, #4facfe, #00f2fe);
-            transition: background 0.5s ease;
-        }
-        header {
-            background: rgba(51, 51, 51, 0.8);
-            color: #fff;
-            padding: 1rem;
-            text-align: center;
-        }
-        .container {
-            width: 80%;
-            margin: auto;
-            overflow: hidden;
-            padding: 2rem 0;
-        }
-        section {
-            background: #fff;
-            padding: 2rem;
-            margin-bottom: 1rem;
-            border-radius: 5px;
-        }
-        h2 { color: #333; }
-        footer {
-            text-align: center;
-            padding: 1rem;
-            background: rgba(51, 51, 51, 0.8);
-            color: #fff;
-        }
-        a { color: #4facfe; text-decoration: none; }
-        a:hover { text-decoration: underline; }
-    </style>
-    <script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "Person",
-  "name": "Max Serrano",
-  "url": "https://mjsamax.github.io",
-  "sameAs": [
-    "https://www.linkedin.com/in/tuusuario",
-    "https://github.com/mjsamax",
-    "https://twitter.com/tuusuario"
-  ]
-}
-</script>
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-    <meta name="google-site-verification" content="7anmPLXYlbOMnEx0TkPvbwXzhCgf2ei6Bnlya3wUEWo" />
-</head>
-<body>
-    <header>
-        <h1>Max Serrano</h1>
-        <p>Desarrollador Backend, Frontend y Móvil</p>
-    </header>
-    <div class="container">
-        <section>
-            <h2>Sobre Mí</h2>
-            <p>Estudiante de Ciencia de la Computación apasionado por la tecnología y el desarrollo de software.</p>
-        </section>
-        <section>
-            <h2>Habilidades</h2>
-            <ul>
-                <li>Backend: Node.js, Python, Java</li>
-                <li>Frontend: React, Vue, Angular</li>
-                <li>Móvil: Flutter, React Native</li>
-            </ul>
-        </section>
-        <section id="contacto">
-  <h2>Redes y Perfiles Profesionales</h2>
-  <ul>
-    <li><a href="https://www.linkedin.com/in/max-jairo-serrano-arostegui-9147702b6/" target="_blank">LinkedIn</a></li>
-    <li><a href="https://github.com/mjsamax" target="_blank">GitHub</a></li>
-    <li><a href="https://twitter.com/tuusuario" target="_blank">Twitter/X</a></li>
-  </ul>
-    </section>
+		<title>reveal.js</title>
 
-        <section>
-            <h2>Proyectos</h2>
-            <p>Repositorio de proyectos en <a href="https://github.com/" target="_blank">GitHub</a>.</p>
-        </section>
-        <section>
-            <h2>Contacto</h2>
-            <p>Email: max.serrano@example.com</p>
-            <p>LinkedIn: <a href="https://www.linkedin.com/in/max-serrano" target="_blank">Perfil</a></p>
-        </section>
-    </div>
-    <footer>
-        <p>&copy; 2025 Max Serrano</p>
-    </footer>
-    <script>
-        // Actualiza el gradiente de fondo en función de la posición del mouse
-        document.addEventListener('mousemove', function(e) {
-            const width = window.innerWidth;
-            const angle = (e.clientX / width) * 360;
-            document.body.style.background = `linear-gradient(${angle}deg, #4facfe, #00f2fe)`;
-        });
-    </script>
-</body>
+		<link rel="stylesheet" href="dist/reset.css">
+		<link rel="stylesheet" href="dist/reveal.css">
+		<link rel="stylesheet" href="dist/theme/black.css">
+
+		<!-- Theme used for syntax highlighted code -->
+		<link rel="stylesheet" href="plugin/highlight/monokai.css">
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+				<section>Slide 1</section>
+				<section>
+					<section>Slide 2</section>
+					<section>Slide 2</section>
+				</section>
+				<section>Slide 3</section>
+				<section>Slide 3</section>
+			</div>
+		</div>
+
+		<script src="dist/reveal.js"></script>
+		<script src="plugin/notes/notes.js"></script>
+		<script src="plugin/markdown/markdown.js"></script>
+		<script src="plugin/highlight/highlight.js"></script>
+		<script>
+			// More info about initialization & config:
+			// - https://revealjs.com/initialization/
+			// - https://revealjs.com/config/
+			Reveal.initialize({
+				hash: true,
+
+				// Learn about plugins: https://revealjs.com/plugins/
+				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ]
+			});
+		</script>
+	</body>
 </html>
