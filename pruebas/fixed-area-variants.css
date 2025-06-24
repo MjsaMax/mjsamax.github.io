@@ -1,0 +1,83 @@
+/* 🎨 VARIANTES DE ÁREAS FIJAS */
+
+/* OPCIÓN 1: Header fijo arriba */
+.layout-header .fixed-header {
+  display: flex;
+}
+
+.layout-header .fixed-sidebar {
+  display: none;
+}
+
+.layout-header .reveal {
+  margin-left: 0;
+  margin-top: 80px;
+  width: 100vw;
+  height: calc(100vh - 80px);
+}
+
+/* OPCIÓN 2: Panel derecho fijo */
+.layout-right .fixed-panel-right {
+  display: flex;
+}
+
+.layout-right .fixed-sidebar {
+  display: none;
+}
+
+.layout-right .reveal {
+  margin-left: 0;
+  margin-right: 150px;
+  width: calc(100vw - 150px);
+}
+
+/* OPCIÓN 3: Footer fijo abajo */
+.fixed-footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100vw;
+  height: 60px;
+  background-color: #2c3e50;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 1.2em;
+}
+
+.layout-footer .reveal {
+  margin-bottom: 60px;
+  height: calc(100vh - 60px);
+}
+
+/* OPCIÓN 4: Esquina fija */
+.fixed-corner {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  width: 120px;
+  height: 120px;
+  background-color: #e74c3c;
+  border-radius: 50%;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-weight: bold;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* OPCIÓN 5: Barra vertical central */
+.fixed-divider {
+  position: fixed;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 4px;
+  height: 100vh;
+  background-color: #34495e;
+  z-index: 1000;
+}
