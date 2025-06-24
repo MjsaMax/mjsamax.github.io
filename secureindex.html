@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Mi Página Pública</title>
+  <style>
+    #secreto {
+      display: none;
+      background: #f9f9f9;
+      padding: 10px;
+      margin-top: 10px;
+      border: 1px solid #ccc;
+    }
+  </style>
+</head>
+<body>
+  <h1>Bienvenido a mi página</h1>
+  <p>Contenido público visible para todos.</p>
+
+  <button onclick="mostrarSecreto()">Acceder a sección privada</button>
+
+  <div id="secreto">
+    <h2>🔒 Sección privada</h2>
+    <p>Este contenido es solo para ti.</p>
+  </div>
+
+  <script>
+    function mostrarSecreto() {
+      const pass = prompt("Ingresa la contraseña:");
+      if (pass === "miclave123") {
+        document.getElementById("secreto").style.display = "block";
+      } else {
+        alert("Contraseña incorrecta");
+      }
+    }
+  </script>
+</body>
+</html>
